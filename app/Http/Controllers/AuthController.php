@@ -100,7 +100,7 @@ class AuthController extends Controller
 
         try {
             Mail::send('email.forgetPassword',['token' => $token] , function ($message) use($user) {
-                $message->to('siyeb15507@calunia.com');
+                $message->to($user->email);
                 $message->subject('Reset Password');
             });
         } catch (\Throwable $th) {
