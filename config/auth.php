@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'access-token-ability' => 'access-token',
+    'refresh-token-ability' => 'refresh-token',
 
     /*
     |--------------------------------------------------------------------------
